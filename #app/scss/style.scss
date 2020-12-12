@@ -288,9 +288,10 @@
 .choose {
 	min-height: 619px;
 	background-color: $bg;
-	padding: 121px 0px 115px;
+	padding: 121px 0px 112px;
 	&__title {
 		color: #ffffff;
+		margin-bottom: 82px;
 	}
 	&__inner {
 		display: flex;
@@ -299,20 +300,32 @@
 	&__box {
 		max-width: 370px;
 		padding: 30px 20px;
-		&-title {
-			font-size: 24px;
-			text-align: center;
-		}
+
 		&-img {
 			height: 90px;
 			width: 90px;
 			display: block;
-			margin: 0 auto;
+			margin: 0 auto 30px;
 			border: none;
 			border-radius: 50%;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
+		}
+
+		&-title {
+			color: #ffffff;
+			margin-bottom: 23px;
+		}
+		&_active {
+			color: $green;
+		}
+
+		&-text {
+			font-size: 15px;
+			color: #b0bec5;
+			text-align: center;
+			line-height: 1.5;
 		}
 	}
 }
@@ -351,9 +364,46 @@
 			height: 64px;
 			width: 225px;
 			background-color: #ffffff;
-			padding: 23px 10px;
+			padding: 22px 10px;
 			text-align: center;
 		}
 	}
 }
 /* end author */
+
+/* start tutorials */
+.tutorials {
+	padding-top: 73px;
+	padding-bottom: 156px;
+	&__title {
+		margin-bottom: 60px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__block {
+	}
+
+	&__block-img {
+		width: 370px;
+		height: 270px;
+		margin-bottom: 3px;
+	}
+
+	&__block-name {
+		width: 370px;
+		height: 88px;
+		background-color: #f8f8f8;
+		text-align: center;
+		padding-top: 34px;
+		padding-right: 15px;
+	}
+}
+
+/* end tutorials */
+
+/* start footer */
+/* end footer */

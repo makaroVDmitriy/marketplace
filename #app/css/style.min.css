@@ -25,11 +25,6 @@ li {
   list-style: none;
 }
 
-h2 {
-  font-size: 24px;
-  color: #fff;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -54,6 +49,11 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 60px;
+}
+
+.middle__title {
+  font-size: 24px;
+  text-align: center;
 }
 
 /* Slider */
@@ -508,11 +508,12 @@ h2 {
 .choose {
   min-height: 619px;
   background-color: #263238;
-  padding: 121px 0px 115px;
+  padding: 121px 0px 112px;
 }
 
 .choose__title {
   color: #ffffff;
+  margin-bottom: 82px;
 }
 
 .choose__inner {
@@ -529,21 +530,32 @@ h2 {
   padding: 30px 20px;
 }
 
-.choose__box-title {
-  font-size: 24px;
-  text-align: center;
-}
-
 .choose__box-img {
   height: 90px;
   width: 90px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   border: none;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.choose__box-title {
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.choose__box_active {
+  color: #8bc34a;
+}
+
+.choose__box-text {
+  font-size: 15px;
+  color: #b0bec5;
+  text-align: center;
+  line-height: 1.5;
 }
 
 /* end choose */
@@ -582,8 +594,45 @@ h2 {
   height: 64px;
   width: 225px;
   background-color: #ffffff;
-  padding: 23px 10px;
+  padding: 22px 10px;
   text-align: center;
 }
 
 /* end author */
+/* start tutorials */
+.tutorials {
+  padding-top: 73px;
+  padding-bottom: 156px;
+}
+
+.tutorials__title {
+  margin-bottom: 60px;
+}
+
+.tutorials__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tutorials__block-img {
+  width: 370px;
+  height: 270px;
+  margin-bottom: 3px;
+}
+
+.tutorials__block-name {
+  width: 370px;
+  height: 88px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 34px;
+  padding-right: 15px;
+}
+
+/* end tutorials */
+/* start footer */
+/* end footer */
