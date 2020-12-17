@@ -26,10 +26,12 @@
 		margin-right: 25px;
 		span {
 			color: $red;
+			margin-right: 7px;
 		}
 	}
 
 	&__phone {
+		margin-left: 7px;
 	}
 
 	&__box {
@@ -174,8 +176,12 @@
 	}
 }
 
-.btn__bottom {
+.btn__products {
 	box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+}
+
+.btn__products:hover {
+	box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
 }
 
 .products__inner-box {
@@ -334,10 +340,11 @@
 
 /* start author */
 .author {
-	height: 750px;
+	height: 599px;
 	width: 100%;
 	background-size: cover;
-
+	background-repeat: no-repeat;
+	background-size: contain;
 	padding-top: 240px;
 
 	&__inner {
@@ -374,7 +381,7 @@
 /* start tutorials */
 .tutorials {
 	padding-top: 73px;
-	padding-bottom: 156px;
+	padding-bottom: 120px;
 	&__title {
 		margin-bottom: 60px;
 	}
@@ -406,4 +413,246 @@
 /* end tutorials */
 
 /* start footer */
+
+.footer {
+	background-color: $bg;
+	color: #b7c3c8;
+
+	li {
+		cursor: pointer;
+		text-decoration: none;
+		background-image: linear-gradient(#424d53);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 0 2px;
+		transition: background-size 0.5s;
+	}
+
+	li:hover,
+	li:focus {
+		background-size: 100% 2px;
+	}
+
+	li a {
+		font-size: 15px;
+		line-height: 1.2;
+		color: #b7c3c8;
+		margin-bottom: 19px;
+		padding-left: 25px;
+	}
+
+	&__main {
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 106px;
+		padding-bottom: 36px;
+	}
+
+	&__box {
+		max-width: 270px;
+	}
+
+	&__about {
+	}
+
+	&__about-title {
+	}
+
+	&__title {
+		cursor: pointer;
+		color: #ffffff;
+		padding-bottom: 28px;
+		margin-bottom: 28px;
+		text-decoration: none;
+		background-image: linear-gradient($green);
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-size: 53px 2px;
+		transition: background-size 0.5s;
+	}
+
+	&__title:hover,
+	&__title:focus {
+		background-size: 100% 2px;
+	}
+
+	&__about-text {
+		font-size: 15px;
+		font-weight: normal;
+		margin-bottom: 32px;
+	}
+
+	&__about-location {
+		font-size: 14px;
+		color: #ffffff;
+		padding-left: 28px;
+		margin-bottom: 28px;
+		position: relative;
+	}
+
+	&__about-location::before {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: 4px;
+		height: 21px;
+		width: 13px;
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../images/location-icon.png);
+	}
+
+	&__about-tel {
+		font-size: 14px;
+		color: #ffffff;
+		padding-left: 28px;
+		position: relative;
+	}
+
+	&__about-tel::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 2px;
+		height: 17px;
+		width: 18px;
+		display: block;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../images/tel-icon.png);
+	}
+
+	&__community {
+	}
+
+	&__community-title {
+	}
+
+	&__community-list {
+	}
+
+	&__community-home {
+	}
+
+	&__community-forums {
+	}
+
+	&__community-author {
+	}
+
+	&__community-meetups {
+	}
+
+	&__community-affiliate {
+	}
+
+	&__help {
+	}
+
+	&__help-title {
+	}
+
+	&__help-list {
+	}
+
+	&__help-help {
+	}
+
+	&__help-market {
+	}
+
+	&__help-terms {
+	}
+
+	&__help-licenses {
+	}
+
+	&__help-contact {
+	}
+
+	&__follow {
+	}
+
+	&__follow-title {
+	}
+
+	&__follow-social {
+		margin-bottom: 42px;
+		a {
+			background-image: url(../images/social.png);
+			border-radius: 3px;
+			background-repeat: no-repeat;
+			height: 30px;
+			width: 30px;
+			display: inline-block;
+		}
+	}
+
+	&__follow-twitter {
+		background-position: -34px top;
+	}
+
+	&__follow-youtube {
+		background-position: -69px top;
+	}
+
+	&__follow-pinterest {
+		background-position: -104px top;
+	}
+
+	&__follow-linkedin {
+		background-position: -140px top;
+	}
+
+	&__copyright {
+		height: 75px;
+		padding-top: 28px;
+		border-top: 1px solid #424d53;
+		text-align: center;
+		&-text {
+			color: #919699;
+			font-size: 15px;
+		}
+	}
+}
+
+.form {
+	position: relative;
+	&__title {
+		font-size: 20px;
+		margin-bottom: 17px;
+	}
+
+	&__window {
+		height: 39px;
+		width: 259px;
+		background-color: #2f3c43;
+		border: none;
+		outline: none;
+		box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+		position: relative;
+		&::placeholder {
+			padding-left: 55px;
+		}
+	}
+
+	&__btn {
+		height: 39px;
+		width: 49px;
+		padding-top: 7px;
+		border: none;
+		background-color: $green;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 5;
+		cursor: pointer;
+	}
+}
 /* end footer */
